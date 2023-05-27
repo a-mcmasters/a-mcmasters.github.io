@@ -36,13 +36,13 @@ body {
 }
 
 .github-button {
-    background-color: #f6f8fa; /* Lighter GitHub color */
-    color: #333; /* Dark text for lighter background */
+    background-color: #333; /* Darker GitHub color */
+    color: white; /* Light text for darker background */
 }
 
 .github-button:hover {
-    background-color: #333; /* Darker GitHub color on hover */
-    color: white; /* Light text for darker background */
+    background-color: #4b4b4b; /* Slightly lighter than #333 */
+    color: white;
 }
 
 .contact-icons {

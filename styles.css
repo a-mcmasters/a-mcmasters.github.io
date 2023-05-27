@@ -2,9 +2,8 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-button {
+.linkedin-button, .email-button, .github-button {
     font-family: 'Open Sans', sans-serif;
-    background-color: #0077B5; /* LinkedIn color */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -14,4 +13,103 @@ button {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 5px;
+    gap: 10px;
+    width: 300px; /* Set a specific width */
+    text-align: center; /* Center the text and the icon */
+    transition: background-color 0.3s; /* This allows the color to change gradually */
+}
+
+.linkedin-button {
+    background-color: #0077B5; /* LinkedIn color */
+}
+
+.linkedin-button:hover {
+    background-color: #005885; /* A darker shade of LinkedIn blue */
+}
+
+.email-button {
+    background-color: #d44638; /* Gmail color */
+}
+
+.email-button:hover {
+    background-color: #a2332a; /* A darker shade of Gmail red */
+}
+
+.github-button {
+    background-color: #f6f8fa; /* Lighter GitHub color */
+    color: #333; /* Dark text for lighter background */
+}
+
+.github-button:hover {
+    background-color: #333; /* Darker GitHub color on hover */
+    color: white; /* Light text for darker background */
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* This creates a 10px gap between the icons */
+    flex-direction: row;
+}
+
+.linkedin-icon, .email-icon, .github-icon {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    display: flex;  /* Turn the button into a flex container */
+    justify-content: center;  /* Center content horizontally */
+    align-items: center;  /* Center content vertically */
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 50%; /* Makes the button circular */
+    width: 50px; /* Adjust based on your needs */
+    height: 50px; /* Adjust based on your needs */
+    text-align: center; /* Center the text and the icon */
+    transition: background-color 0.3s; /* This allows the color to change gradually */
+}
+
+.linkedin-icon {
+    background-color: #0077B5; /* LinkedIn color */
+}
+
+.linkedin-icon:hover {
+    background-color: #005885; /* A darker shade of LinkedIn blue */
+}
+
+.email-icon {
+    background-color: #d44638; /* Gmail color */
+}
+
+.email-icon:hover {
+    background-color: #a2332a; /* A darker shade of Gmail red */
+}
+
+.github-icon {
+    background-color: #333; /* Darker GitHub color */
+    color: white; /* Light text for darker background */
+}
+
+.github-icon:hover {
+    background-color: #4b4b4b; /* Slightly lighter than #333 */
+    color: white;
+}
+
+/* Ensure the icons don't take up the full space of the button */
+.linkedin-icon i, .email-icon i, .github-icon i {
+    display: inline;  /* Makes sure the icons don't act as block elements */
+    width: auto;  /* Allows the icon to take up only as much width as it needs */
+    height: auto;  /* Allows the icon to take up only as much height as it needs */
+}
+
+.contact-icons a {
+    text-decoration: none;
+}
+
+footer {
+    background-color: #f6f8fa; /* Light grey */
+    padding: 20px;
+    text-align: center;
 }

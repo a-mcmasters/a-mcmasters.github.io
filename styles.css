@@ -1,5 +1,13 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1;
+    padding-bottom: 150px; /* Adjust this to match your footer's height */
 }
 
 .linkedin-button, .email-button, .github-button {
@@ -52,6 +60,10 @@ body {
     flex-direction: row;
 }
 
+.contact-icons a {
+    text-decoration: none;
+}
+
 .linkedin-icon, .email-icon, .github-icon {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -69,6 +81,13 @@ body {
     height: 50px; /* Adjust based on your needs */
     text-align: center; /* Center the text and the icon */
     transition: background-color 0.3s; /* This allows the color to change gradually */
+}
+
+/* Ensure the icons don't take up the full space of the button */
+.linkedin-icon i, .email-icon i, .github-icon i {
+    display: inline;  /* Makes sure the icons don't act as block elements */
+    width: auto;  /* Allows the icon to take up only as much width as it needs */
+    height: auto;  /* Allows the icon to take up only as much height as it needs */
 }
 
 .linkedin-icon {
@@ -97,19 +116,11 @@ body {
     color: white;
 }
 
-/* Ensure the icons don't take up the full space of the button */
-.linkedin-icon i, .email-icon i, .github-icon i {
-    display: inline;  /* Makes sure the icons don't act as block elements */
-    width: auto;  /* Allows the icon to take up only as much width as it needs */
-    height: auto;  /* Allows the icon to take up only as much height as it needs */
-}
-
-.contact-icons a {
-    text-decoration: none;
-}
-
 footer {
     background-color: #f6f8fa; /* Light grey */
-    padding: 20px;
+    padding: 5px;
     text-align: center;
+    position: fixed;  /* Make the position relative to the viewport */
+    bottom: 0;  /* Stick it to the bottom of the viewport */
+    width: 100%;  /* Make it span the full width of the viewport */
 }

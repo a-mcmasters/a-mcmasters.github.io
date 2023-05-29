@@ -1,93 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
 
-    <!-- Add Google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <!-- Add Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 
-    <!-- Add icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <!-- Add icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+        <!-- Add link to your CSS file here -->
+        <link rel="stylesheet" href="styles.css">
 
+    </head>
+    <body>
+        <div class="page-container">
+            <div class="sidebar">
+                <img src="1659903129248.jpeg" alt="Profile Picture" class="profile-picture">
+                <div class="contact-icons">
+                    <a href="mailto:alexander.mcmasters@gmail.com">
+                        <button class="email-icon">
+                            <i class="fas fa-envelope"></i> 
+                        </button>
+                    </a>
+                    <a href="https://github.com/a-mcmasters" target="_blank">
+                        <button class="github-icon">
+                            <i class="fab fa-github"></i> 
+                        </button>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexander-mcmasters/" target="_blank">
+                        <button class="linkedin-icon">
+                            <i class="fab fa-linkedin-in"></i> 
+                        </button>
+                    </a>
+                </div>
+                <br>
+                <header>
+                    <div class="aboutme">
+                        Bug Hunter, Dice Master, Nature Lover, Animal Advocate
+                    </div>
+                </header>
+                <br>
+            </div>
 
-    <!-- Add link to your CSS file here -->
-    <link rel="stylesheet" href="styles.css">
+            <main>
+                <header>
+                        <h2 class="sidebar-name">Alex McMasters - QA Engineer</h2>
+                </header>
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <!-- Add your projects here -->
+                </section>
 
-</head>
-<body>
-    <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <!-- Add your projects here -->
-        </section>
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <!-- Add your skills here -->
+                </section>
 
-        <section id="skills">
-            <h2>Skills</h2>
-            <!-- Add your skills here -->
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <!-- Add your contact details here -->
-            <a href="mailto:alexander.mcmasters@gmail.com">
-                <button class ="email-button">
-                    <i class="fas fa-envelope"></i> 
-                    Send me an email
-                </button>
-            </a>
-            <br>
-            <a href="https://github.com/a-mcmasters" target="_blank">
-                <button class="github-button">
-                    <i class="fab fa-github"></i> 
-                    Check out my GitHub
-                </button>
-            <br>
-            <a href="https://www.linkedin.com/in/alexander-mcmasters/" target="_blank">
-                <button class ="linkedin-button">
-                    <i class="fab fa-linkedin-in"></i> 
-                    Connect with me on LinkedIn
-                </button>
-            </a>
-        </section>
-    </main>
-
-    <footer>
-        <!-- Add your footer info here -->
-        <p>Copyright &copy; 2023 by Alex McMasters</p>
-        <div class="contact-icons">
-            <a href="mailto:alexander.mcmasters@gmail.com">
-                <button class="email-icon">
-                    <i class="fas fa-envelope"></i> 
-                </button>
-            </a>
-            <a href="https://github.com/a-mcmasters" target="_blank">
-                <button class="github-icon">
-                    <i class="fab fa-github"></i> 
-                </button>
-            </a>
-            <a href="https://www.linkedin.com/in/alexander-mcmasters/" target="_blank">
-                <button class="linkedin-icon">
-                    <i class="fab fa-linkedin-in"></i> 
-                </button>
-            </a>
+                <section id="contact">
+                    <h2>Contact</h2>
+                    <!-- Add your contact details here -->
+                    <a href="mailto:alexander.mcmasters@gmail.com">
+                        <button class ="email-button">
+                            <i class="fas fa-envelope"></i> 
+                            Send me an email
+                        </button>
+                    </a>
+                    <br>
+                    <a href="https://github.com/a-mcmasters" target="_blank">
+                        <button class="github-button">
+                            <i class="fab fa-github"></i> 
+                            Check out my GitHub
+                        </button>
+                    <br>
+                    <a href="https://www.linkedin.com/in/alexander-mcmasters/" target="_blank">
+                        <button class ="linkedin-button">
+                            <i class="fab fa-linkedin-in"></i> 
+                            Connect with me on LinkedIn
+                        </button>
+                    </a>
+                </section>
+                
+                <footer>
+                    <!-- Add your footer info here -->
+                    <p>Copyright &copy; 2023 by Alex McMasters</p>
+                    <div class="contact-icons">
+                        <a href="mailto:alexander.mcmasters@gmail.com">
+                            <button class="email-icon">
+                                <i class="fas fa-envelope"></i> 
+                            </button>
+                        </a>
+                        <a href="https://github.com/a-mcmasters" target="_blank">
+                            <button class="github-icon">
+                                <i class="fab fa-github"></i> 
+                            </button>
+                        </a>
+                        <a href="https://www.linkedin.com/in/alexander-mcmasters/" target="_blank">
+                            <button class="linkedin-icon">
+                                <i class="fab fa-linkedin-in"></i> 
+                            </button>
+                        </a>
+                    </div>
+                </footer>
+            </main>
         </div>
-    </footer>
-</body>
+    </body>
 </html>

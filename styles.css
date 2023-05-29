@@ -2,12 +2,60 @@ body {
     font-family: 'Open Sans', sans-serif;
     display: flex;
     min-height: 100vh;
+    width: 100%;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 0;
+    padding: 0;
+}
+
+.page-container {
+    display: flex;
+}
+
+.sidebar {
+    width: 90%; /* Take up 90% of the screen width on mobile */
+    max-width: 250px; /* on large screens don't get bigger than this*/
+    padding: 20px;
+    border-right: 1px solid #ccc; /* Light border to separate the sidebar */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-image: url('sbbg.jpeg'); /* replace with your image path */
+    background-size: cover;
+    background-position: center;
+    color: white; 
+    margin-top: 0;
+    border-radius: 10px;
+}
+
+.sidebar-name {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.sidebar-title {
+    font-size: 1em;
+    margin: 0;
+}
+
+.aboutme {
+    font-size: small;
+    margin: 10px;
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     flex-grow: 1;
-    padding-bottom: 150px; /* Adjust this to match your footer's height */
+    padding: 20px 20px 150px 20px;
+    margin-top: 0;
 }
 
 .linkedin-button, .email-button, .github-button {
@@ -116,11 +164,43 @@ main {
     color: white;
 }
 
+.profile-picture {
+    width: 60%;
+    margin: 10%;
+    /* More styles to make it look nice */
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 footer {
     background-color: #f6f8fa; /* Light grey */
     padding: 5px;
     text-align: center;
     position: fixed;  /* Make the position relative to the viewport */
     bottom: 0;  /* Stick it to the bottom of the viewport */
+    left: 0;
+    right: 0;
     width: 100%;  /* Make it span the full width of the viewport */
+    transition: padding 0.3s ease;
 }
+
+
+/* This is a media query that only applies to screens wider than 600px */
+@media screen and (min-width: 600px) {
+    body {
+        justify-content: space-around; /* Put some space between the sidebar and content */
+    }
+    .sidebar {
+        margin-bottom: 0; /* No need for space below the sidebar in a horizontal layout */
+    }
+    .main-content {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        display: none;
+    }
+  }

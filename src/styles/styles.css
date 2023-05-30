@@ -184,7 +184,7 @@ main {
 
 footer {
     background-color: #f6f8fa; /* Light grey */
-    padding: 5px;
+    padding: 5px 0;
     text-align: center;
     position: fixed;  /* Make the position relative to the viewport */
     bottom: 0;  /* Stick it to the bottom of the viewport */

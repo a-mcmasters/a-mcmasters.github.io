@@ -37,13 +37,12 @@ hr {
     margin-top: 0;
     margin-bottom: auto;
     border-radius: 10px;
-    transition: .5s;
 }
 
 .sidebar-name {
     font-size: 4em;
     margin: 0;
-    transition: .8s;
+    transition: .8s ease;
 }
 
 .sidebar-title {
@@ -57,7 +56,7 @@ hr {
 }
 
 .aboutme {
-    margin: 0px 40px;
+    margin: 0px 4vb;
 }
 
 main {
@@ -225,6 +224,10 @@ footer {
         color: white;
         font-size: 10vw;
         padding: 0 50px;
+    }
+
+    .aboutme {
+        margin: 0;
     }
 
 

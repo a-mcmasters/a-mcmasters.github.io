@@ -42,7 +42,6 @@ hr {
 .sidebar-name {
     font-size: 4em;
     margin: 0;
-    transition: .8s ease;
 }
 
 .sidebar-title {

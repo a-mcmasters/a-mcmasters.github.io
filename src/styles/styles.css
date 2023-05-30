@@ -49,9 +49,13 @@ hr {
     margin: 0;
 }
 
-.aboutme {
+.tagline {
     font-size: small;
     margin: 10px;
+}
+
+.aboutme {
+    margin: 0px 40px;
 }
 
 main {

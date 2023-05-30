@@ -16,7 +16,7 @@ body {
 
 hr {
     border: none; 
-    height: 2px;
+    height: 1px;
     background-color: #000000; /* Black color */
     width: 100%; /* Full width */
 }
@@ -50,7 +50,7 @@ hr {
 }
 
 .tagline {
-    font-size: small;
+    font-size: smaller;
     margin: 10px;
 }
 
@@ -182,6 +182,51 @@ main {
     object-fit: cover;
 }
 
+.tabcontent {
+    display: none;
+}
+  
+.tablinks {
+    background-color: #555;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    border-radius: 50px;
+}
+
+.tablinks:nth-child(1) { /* Styles for the "About Me" tab */
+    background-color: #009688;
+    color: white;
+}
+  
+.tablinks:nth-child(2) { /* Styles for the "Projects" tab */
+    background-color: #f44336;
+    color: white;
+}
+  
+.tablinks:nth-child(3) { /* Styles for the "Contact" tab */
+    background-color: #3f51b5;
+    color: white;
+}
+
+.tablinks:nth-child(4) { /* Styles for the "Resume" tab */
+    background-color: #8e4585;
+    color: white;
+}
+  
+.tablinks:hover {
+    opacity: 0.8;
+}
+  
+.tablinks.active {
+    background-color: #333;
+}
+  
+
 footer {
     background-color: #f6f8fa; /* Light grey */
     padding: 5px 0;
@@ -219,15 +264,17 @@ footer {
     }
 
     .sidebar-name {
+
         background-color: #0080C6;
         color: white;
         font-size: 10vw;
         padding: 0 50px;
+        margin-top: 1vh;
+        cursor: pointer;
     }
 
     .aboutme {
         margin: 0;
     }
 
-
-  }
+}

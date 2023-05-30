@@ -54,20 +54,42 @@
 
             <main>
                 <header>
-                        <h2 class="sidebar-name">Alex McMasters</h2>
+                        <h2 class="sidebar-name" id="name-header">Alex McMasters</h2>
                 </header>
                 <hr>
-                <header>
-                    <h1>About Me</h1>
-                </header>
+                <div class="tab">
+                    <button class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</button>
+                    <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+                    <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+                    <button class="tablinks" onclick="openTab(event, 'Resume')">Resume</button>
+                  </div>
+                  
+                  <div id="AboutMe" class="tabcontent">
+                    <header>
+                        <h1>About Me</h1>
+                    </header>
+    
+                    <div class="aboutme">
+                        For as long as I can remember, I've been driven by a passion for solving puzzles and uncovering glitches. <br>
+                        With a keen eye for detail and a relentless pursuit of excellence, I'm committed to creating a seamless and reliable digital experience for users. <br><br>
+                        Outside of my profession, I've honed my skills in various tabletop games that rely on strategy and luck. I'm always up for a challenge and enjoy the excitement of unpredictable outcomes. <br><br>
+                        Animals hold a special place in my heart, and I'm passionate about advocating for their well-being. From raising awareness about animal rights to supporting local shelters, I believe in giving voice to our furry and feathered friends. <br><br>
+                        I find joy and inspiration in the world of sports, celebrating teamwork, resilience, and the pursuit of excellence.
+                    </div>
+                  </div>
+                  
+                  <div id="Contact" class="tabcontent">
+                    <!-- Contact content here -->
+                  </div>
+                  
+                  <div id="Projects" class="tabcontent">
+                    <!-- Projects content here -->
+                  </div>
+                  
+                  <div id="Resume" class="tabcontent">
+                    <!-- Resume content here -->
+                  </div>
 
-                <div class="aboutme">
-                    For as long as I can remember, I've been driven by a passion for solving puzzles and uncovering glitches. <br>
-                    With a keen eye for detail and a relentless pursuit of excellence, I'm committed to creating a seamless and reliable digital experience for users. <br><br>
-                    Outside of my profession, I've honed my skills in various tabletop games that rely on strategy and luck. I'm always up for a challenge and enjoy the excitement of unpredictable outcomes. <br><br>
-                    Animals hold a special place in my heart, and I'm passionate about advocating for their well-being. From raising awareness about animal rights to supporting local shelters, I believe in giving voice to our furry and feathered friends. <br><br>
-                    I find joy and inspiration in the world of sports, celebrating teamwork, resilience, and the pursuit of excellence.
-                </div>
                 
                 <footer>
                     <!-- Add your footer info here -->
@@ -96,6 +118,7 @@
             <div style="background-color: #0080C6; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; border: solid 1px #006699; width: 60%; border-radius: 10px;">
                 <span id="close" style="color: #000; float: right; font-size: 20px; font-weight: bold; cursor: pointer;">&times;</span>
                 <img src="src/pfp.png" alt="Profile Picture" style="width: 100%; max-width: 500px; border-radius: 50%; border: solid 1px #006699;">
+                <p id='modal-text' style="color: white; font-size: small;" ></p>
             </div>
         </div>        
         <script src="src/scripts/script.js"></script>

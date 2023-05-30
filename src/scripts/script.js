@@ -23,3 +23,30 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+  
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+  
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+  
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+
+document.getElementById('name-header').addEventListener('click', function() {
+    if (window.innerWidth < 768) {  // Only open the modal on small screens
+        document.getElementById('modal').style.display = 'block';
+        document.getElementById('modal-text').innerHTML = "Bug Hunter, Dice Master, Animal Advocate, Sports Enthusiast"
+    }
+});
+
+openTab(event, 'AboutMe');

@@ -212,11 +212,7 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .aboutme {
-        width: 100%;
-    }
-
-    .main-content {
+    main {
         width: 100%;
     }
 

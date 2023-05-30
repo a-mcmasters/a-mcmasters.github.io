@@ -37,11 +37,13 @@ hr {
     margin-top: 0;
     margin-bottom: auto;
     border-radius: 10px;
+    transition: .5s;
 }
 
 .sidebar-name {
     font-size: 4em;
     margin: 0;
+    transition: .8s;
 }
 
 .sidebar-title {
@@ -214,15 +216,20 @@ footer {
         width: 100%;
     }
 
-    body {
-        width: 100%;
-    }
-
     .main-content {
         width: 100%;
     }
 
-    .sidebar{
+    .sidebar {
         display: none;
     }
+
+    .sidebar-name {
+        background-color: #0080C6;
+        color: white;
+        font-size: 10vw;
+        padding: 0 50px;
+    }
+
+
   }

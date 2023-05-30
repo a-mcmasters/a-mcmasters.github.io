@@ -193,8 +193,8 @@ main {
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
-    transition: 0.3s;
     font-size: 17px;
+    transition: 0.3s;
     border-radius: 50px;
 }
 
@@ -275,6 +275,10 @@ footer {
 
     .aboutme {
         margin: 0;
+    }
+
+    .tablinks {
+        font-size: 4vw;
     }
 
 }

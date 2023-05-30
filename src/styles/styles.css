@@ -210,9 +210,18 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-    .footer {
-        display: none;
+    .aboutme {
+        width: 100%;
     }
+
+    body {
+        width: 100%;
+    }
+
+    .main-content {
+        width: 100%;
+    }
+
     .sidebar{
         display: none;
     }

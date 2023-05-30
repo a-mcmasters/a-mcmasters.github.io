@@ -1,19 +1,24 @@
 body {
     font-family: 'Open Sans', sans-serif;
     display: flex;
-    min-height: 100vh;
+    min-height: 50vh;
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     margin: 0;
-    margin-top: 0;
     padding: 0;
 }
 
 .page-container {
     display: flex;
+}
+
+hr {
+    border: none; 
+    height: 2px;
+    background-color: #000000; /* Black color */
+    width: 100%; /* Full width */
 }
 
 .sidebar {
@@ -25,16 +30,17 @@ body {
     align-items: center;
     text-align: center;
     flex-direction: column;
-    background-image: url('sbbg.jpeg'); /* replace with your image path */
+    background-image: url('../sbbg.jpeg'); /* replace with your image path */
     background-size: cover;
     background-position: center;
     color: white; 
     margin-top: 0;
+    margin-bottom: auto;
     border-radius: 10px;
 }
 
 .sidebar-name {
-    font-size: 1.5em;
+    font-size: 4em;
     margin: 0;
 }
 
@@ -52,9 +58,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 55vh;
     flex-grow: 1;
-    padding: 20px 20px 150px 20px;
+    padding: 0 20px 150px 20px;
     margin-top: 0;
 }
 
@@ -186,7 +192,7 @@ footer {
 
 
 /* This is a media query that only applies to screens wider than 600px */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 768px) {
     body {
         justify-content: space-around; /* Put some space between the sidebar and content */
     }
@@ -201,6 +207,9 @@ footer {
 
 @media screen and (max-width: 768px) {
     .footer {
+        display: none;
+    }
+    .sidebar{
         display: none;
     }
   }

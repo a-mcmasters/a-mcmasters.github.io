@@ -3,7 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Portfolio</title>
+        <meta name="theme-color" content="#000000">
+        <meta name="description" content="Alex McMasters' Personal Website">
+        <title>Alex McMasters</title>
 
         <!-- Add Google font -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,13 +16,18 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
         <!-- Add link to your CSS file here -->
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles/styles.css">
+
+
 
     </head>
     <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
         <div class="page-container">
             <div class="sidebar">
-                <img src="1659903129248.jpeg" alt="Profile Picture" class="profile-picture">
+                <a href="#" id="profile-pic-link">
+                    <img src="pfp.png" alt="Profile Picture" class="profile-picture">
+                </a>
                 <div class="contact-icons">
                     <a href="mailto:alexander.mcmasters@gmail.com">
                         <button class="email-icon">
@@ -39,51 +46,29 @@
                     </a>
                 </div>
                 <br>
-                <header>
                     <div class="aboutme">
-                        Bug Hunter, Dice Master, Nature Lover, Animal Advocate
+                        Bug Hunter, Dice Master, Animal Advocate, Sports Enthusiast
                     </div>
-                </header>
                 <br>
             </div>
 
             <main>
                 <header>
-                        <h2 class="sidebar-name">Alex McMasters - QA Engineer</h2>
+                        <h2 class="sidebar-name">Alex McMasters</h2>
                 </header>
-                <section id="projects">
-                    <h2>Projects</h2>
-                    <!-- Add your projects here -->
-                </section>
+                <hr>
+                <header>
+                    <h1>About Me</h1>
+                </header>
 
-                <section id="skills">
-                    <h2>Skills</h2>
-                    <!-- Add your skills here -->
-                </section>
 
-                <section id="contact">
-                    <h2>Contact</h2>
-                    <!-- Add your contact details here -->
-                    <a href="mailto:alexander.mcmasters@gmail.com">
-                        <button class ="email-button">
-                            <i class="fas fa-envelope"></i> 
-                            Send me an email
-                        </button>
-                    </a>
-                    <br>
-                    <a href="https://github.com/a-mcmasters" target="_blank">
-                        <button class="github-button">
-                            <i class="fab fa-github"></i> 
-                            Check out my GitHub
-                        </button>
-                    <br>
-                    <a href="https://www.linkedin.com/in/alexander-mcmasters/" target="_blank">
-                        <button class ="linkedin-button">
-                            <i class="fab fa-linkedin-in"></i> 
-                            Connect with me on LinkedIn
-                        </button>
-                    </a>
-                </section>
+                <div style="padding: 20px 20px">
+                    For as long as I can remember, I've been driven by a passion for solving puzzles and uncovering glitches. <br>
+                    With a keen eye for detail and a relentless pursuit of excellence, I'm committed to creating a seamless and reliable digital experience for users. <br><br>
+                    Outside of my profession, I've honed my skills in various tabletop games that rely on strategy and luck. I'm always up for a challenge and enjoy the excitement of unpredictable outcomes. <br><br>
+                    Animals hold a special place in my heart, and I'm passionate about advocating for their well-being. From raising awareness about animal rights to supporting local shelters, I believe in giving voice to our furry and feathered friends. <br><br>
+                    I find joy and inspiration in the world of sports, celebrating teamwork, resilience, and the pursuit of excellence.
+                </div>
                 
                 <footer>
                     <!-- Add your footer info here -->
@@ -108,5 +93,12 @@
                 </footer>
             </main>
         </div>
+        <div id="modal" style="display: none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; background-color: rgba(0,0,0,0.8);">
+            <div style="background-color: #0080C6; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); padding: 20px; border: solid 1px #006699; width: 60%; border-radius: 10px;">
+                <span id="close" style="color: #000; float: right; font-size: 20px; font-weight: bold; cursor: pointer;">&times;</span>
+                <img src="pfp.png" alt="Profile Picture" style="width: 100%; max-width: 500px; border-radius: 50%; border: solid 1px #006699;">
+            </div>
+        </div>        
+        <script src="scripts/script.js"></script>
     </body>
 </html>

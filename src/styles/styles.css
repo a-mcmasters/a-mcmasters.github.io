@@ -225,8 +225,31 @@ main {
 .tablinks.active {
     background-color: #333;
 }
-  
 
+.project-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: box-shadow 0.3s ease-in-out;
+    align-content: normal;
+}
+
+.project-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.6), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.project-link {
+    color: #0000EE;  /* Change as needed */
+    text-decoration: none;
+}
+
+.project-link:hover {
+    text-decoration: underline;
+}
+  
 footer {
     background-color: #f6f8fa; /* Light grey */
     padding: 5px 0;
@@ -258,11 +281,9 @@ footer {
     main {
         width: 100%;
     }
-
     .sidebar {
         display: none;
     }
-
     .sidebar-name {
 
         background-color: #0080C6;
@@ -272,13 +293,10 @@ footer {
         margin-top: 1vh;
         cursor: pointer;
     }
-
     .aboutme {
         margin: 0;
     }
-
     .tablinks {
         font-size: 3.2vw;
     }
-
 }
